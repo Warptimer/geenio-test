@@ -1,0 +1,19 @@
+doctype html
+head
+  title Geenio test
+  meta(charset="utf-8")
+  meta(name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=no, maximum-scale=1.0, minimum-scale=1.0")
+  link(rel="stylesheet", href="https://fonts.googleapis.com/css?family=Roboto:300,400,700&amp;subset=cyrillic")
+  link(rel="stylesheet", href="./style.css")
+body
+  main.calendar
+    .calendar__header
+      .calendar__buttons
+        button.calendar__button Добавить
+        button.calendar__button Обновить
+      .calendar__search
+        .calendar__input
+          .calendar__input-search
+          input#search(type="search" placeholder="Событие, дата или участник").calendar__input-source
+    
+  script(type="text/javascript", src="./functions.min.js")
