@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<head>
+  <title>Geenio test</title>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=no, maximum-scale=1.0, minimum-scale=1.0">
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto:300,400,700&amp;amp;subset=cyrillic">
+  <link rel="stylesheet" href="./assets/css/style.css">
+</head>
+<body>
+  <main class="calendar">
+    <div class="calendar__header">
+      <div class="calendar__title">Поиск</div>
+      <div class="calendar__search search">
+        <div class="search__input">
+          <div class="search__icon"></div>
+          <input class="search__source" id="search" type="search" placeholder="Событие, дата или участник">
+        </div>
+        <div class="search__result result" id="result"></div>
+      </div>
+    </div>
+    <div class="calendar__title">Добавление события </div>
+    <div class="calendar__content">
+      <form class="calendar__form" id="addEvent">
+        <fieldset class="calendar__form-fieldset">
+          <input class="calendar__input" type="text" placeholder="Событие" required>
+          <input class="calendar__input" type="date" placeholder="День, месяц, год" required>
+          <input class="calendar__input" type="text" placeholder="Участники" required>
+          <textarea class="calendar__input" placeholder="Описание"></textarea>
+        </fieldset>
+        <button class="calendar__button" type="submit">Готово</button>
+        <button class="calendar__button" type="reset">Удалить</button>
+      </form>
+    </div>
+    <div class="calendar__title">Быстрое добавление</div>
+    <div class="calendar__content">
+      <form class="calendar__form" id="addFastEvent">
+        <fieldset class="calendar__form-fieldset">
+          <input class="calendar__input" type="text" placeholder="Дата; название; участники; описание" required>
+        </fieldset>
+        <button class="calendar__button" type="submit">Готово</button>
+      </form>
+    </div>
+    <div class="calendar__timeline timeline">
+      <div class="timeline__nav">
+        <div class="timeline__prev"></div>
+        <div class="timeline__next"></div>
+      </div>
+      <div class="timeline__content" id="timeline"></div>
+    </div>
+    <div class="calendar__events events" id="events"></div>
+  </main>
+  <script type="text/javascript" src="./assets/js/functions.min.js"></script>
+</body>
