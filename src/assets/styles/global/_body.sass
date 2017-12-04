@@ -1,0 +1,43 @@
+body
+  overflow-x: hidden
+  position: relative
+
+  *
+    -webkit-font-smoothing: antialiased
+    -webkit-text-size-adjust: 100%
+
+  p
+    margin: 0
+    padding: 0
+    -webkit-margin-before: 0
+    -webkit-margin-after: 0
+    -webkit-margin-start: 0
+    -webkit-margin-end: 0
+
+  button,
+  a
+    display: block
+    cursor: pointer
+    text-decoration: none
+    outline: none
+
+  input
+    text-decoration: none
+    outline: none
+
+  textarea
+    resize: none
+
+  // iOS
+  textarea, input
+    border-radius: 0
+    -webkit-border-radius: 0
+    padding: 0
+    overflow: hidden
+
+  input[type="date"]
+    &::-webkit-calendar-picker-indicator,
+    &::-webkit-inner-spin-button,
+    &::-webkit-input-placeholder
+      display: none
+      visibility: hidden

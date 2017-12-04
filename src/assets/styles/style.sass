@@ -1,0 +1,85 @@
+\:root
+  font-size: 16px
+  font-family: 'Roboto', sans-serif
+
+
+// Reset
+@import 'global/reset'
+
+// Body
+@import 'global/body'
+
+input,
+textarea
+  border: 1px solid #ccc
+  margin: 5px 0
+  box-sizing: border-box
+  padding: 5px !important
+  width: 100%
+
+button
+  border: 1px solid #ccc
+  margin: 5px 0
+  box-sizing: border-box
+  padding: 5px !important
+
+.calendar
+  font-size: 16px
+  font-family: 'Roboto', sans-serif
+  padding: 20px
+  box-sizing: border-box
+
+  &__title
+    margin-bottom: 10px
+
+  &__header
+    margin-bottom: 20px
+
+  &__content
+    display: inline-block
+    margin-bottom: 20px
+    padding: 10px 
+    box-sizing: border-box
+    border: 2px solid #ccc
+    width: calc(200px * 7)
+
+  &__header
+    width: calc(200px * 7)
+
+.events
+  width: calc(200px * 7)
+
+.timeline
+  margin-top: 20px
+  max-width: calc(200px * 7)
+
+  &__content
+    display: flex
+    flex-wrap: wrap
+    width: 100%
+
+  &__nav
+    display: flex
+    align-items: center
+    width: 100%
+    justify-content: space-between
+
+    & > *
+      width: 100px
+      height: 40px
+      background: #ccc
+      margin-right: 20px
+
+      &:last-child
+        margin-right: 0
+
+  &__day
+    cursor: pointer
+    border: 1px solid #cccccc
+    display: flex
+    align-items: center
+    justify-content: center
+    flex-direction: column
+    box-sizing: border-box
+    width: 200px
+    height: 200px

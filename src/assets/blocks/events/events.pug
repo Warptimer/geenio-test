@@ -1,0 +1,16 @@
+.calendar__title Добавление события 
+.calendar__content
+  form#addEvent.calendar__form
+    fieldset.calendar__form-fieldset
+      input(type="text" placeholder="Событие" required).calendar__input
+      input(type="date" placeholder="День, месяц, год" required).calendar__input
+      input(type="text" placeholder="Участники" required).calendar__input
+      textarea(placeholder="Описание").calendar__input
+    button(type="submit").calendar__button Готово
+    button(type="reset").calendar__button Удалить
+.calendar__title Быстрое добавление
+.calendar__content
+  form#addFastEvent.calendar__form
+    fieldset.calendar__form-fieldset
+      input(type="text" placeholder="Дата; название; участники; описание" required).calendar__input
+    button(type="submit").calendar__button Готово

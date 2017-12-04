@@ -1,10 +1,5 @@
-doctype html
-head
-  title Geenio test
-  meta(charset="utf-8")
-  meta(name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=no, maximum-scale=1.0, minimum-scale=1.0")
-  link(rel="stylesheet", href="https://fonts.googleapis.com/css?family=Roboto:300,400,700&amp;subset=cyrillic")
-  link(rel="stylesheet", href="./style.css")
+include assets/blocks/head/head
+
 body
   main.calendar
     .calendar__header
@@ -12,27 +7,17 @@ body
       //- .calendar__buttons
       //-   button.calendar__button Добавить
       //-   button.calendar__button Обновить
-      .calendar__search
-        .calendar__input
-          .calendar__input-search
-          input#search(type="search" placeholder="Событие, дата или участник").calendar__input-source
-        .calendar__result.result#result
-    .calendar__title Добавление события 
-    form#addEvent.calendar__form
-      fieldset.calendar__form-fieldset
-        input(type="text" placeholder="Событие" required).calendar__input
-        input(type="date" placeholder="День, месяц, год" required).calendar__input
-        input(type="text" placeholder="Участники" required).calendar__input
-        textarea(placeholder="Описание").calendar__input
-      button(type="submit").calendar__button Готово
-      button(type="reset").calendar__button Удалить
-    .calendar__title Быстрое добавление
-      form#addFastEvent.calendar__form
-        fieldset.calendar__form-fieldset
-          input(type="text" placeholder="Дата; название; участники; описание" required).calendar__input
-        button(type="submit").calendar__button Готово
+
+      include assets/blocks/search/search
+
+    include assets/blocks/events/events
+    
     .calendar__timeline.timeline
-      .timeline__content
+      .timeline__nav
+        .timeline__prev
+        .timeline__next
+      .timeline__content#timeline
+
     .calendar__events.events#events
     
-  script(type="text/javascript", src="./functions.min.js")
+  script(type="text/javascript", src="./assets/js/functions.min.js")
